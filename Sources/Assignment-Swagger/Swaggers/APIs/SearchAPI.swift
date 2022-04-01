@@ -22,7 +22,7 @@ open class SearchAPI {
      - parameter page: (query) Page number of the results to fetch. Default: 1 (optional)
      - parameter completion: completion handler to receive the data and the error objects
      */
-    open class func searchRepositoriesGet(accept: String, q: String, sort: String? = nil, order: String? = nil, perPage: String? = nil, page: String? = nil, completion: @escaping ((_ data: SearchResponseDTO?,_ error: Error?) -> Void)) {
+    open class func searchRepositoriesGet(accept: String, q: String, sort: String? = nil, order: String? = nil, perPage: Int? = nil, page: Int? = nil, completion: @escaping ((_ data: SearchResponseDTO?,_ error: Error?) -> Void)) {
         searchRepositoriesGetWithRequestBuilder(accept: accept, q: q, sort: sort, order: order, perPage: perPage, page: page).execute { (response, error) -> Void in
             completion(response?.body, error)
         }
@@ -44,7 +44,7 @@ open class SearchAPI {
 
      - returns: RequestBuilder<SearchResponseDTO> 
      */
-    open class func searchRepositoriesGetWithRequestBuilder(accept: String, q: String, sort: String? = nil, order: String? = nil, perPage: String? = nil, page: String? = nil) -> RequestBuilder<SearchResponseDTO> {
+    open class func searchRepositoriesGetWithRequestBuilder(accept: String, q: String, sort: String? = nil, order: String? = nil, perPage: Int? = nil, page: Int? = nil) -> RequestBuilder<SearchResponseDTO> {
         let path = "/search/repositories"
         let URLString = SwaggerClientAPI.basePath + path
         let parameters: [String:Any]? = nil
@@ -54,8 +54,8 @@ open class SearchAPI {
             "q": q, 
             "sort": sort, 
             "order": order, 
-            "per_page": perPage, 
-            "page": page
+            "per_page": perPage?.encodeToJSON(), 
+            "page": page?.encodeToJSON()
         ])
         let nillableHeaders: [String: Any?] = [
             "accept": accept

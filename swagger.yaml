@@ -1,7 +1,7 @@
 swagger: "2.0"
 info:
   description: API specification for an assignment
-  version: 1.0.0
+  version: 1.0.1
   title: GitHub search
 host: api.github.com
 basePath: /
@@ -46,12 +46,12 @@ paths:
         in: query
         description: "Results per page (max 100). Default: 30"
         required: false
-        type: string
+        type: integer
       - name: page
         in: query
         description: "Page number of the results to fetch. Default: 1"
         required: false
-        type: string
+        type: integer
       responses:
         "200":
           description: OK
