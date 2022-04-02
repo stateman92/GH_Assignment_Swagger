@@ -11,17 +11,10 @@ import Foundation
 
 public struct SearchResponseDTO: Codable {
 
-    public var totalCount: Int
     public var items: [SearchResponseItemDTO]
 
-    public init(totalCount: Int, items: [SearchResponseItemDTO]) {
-        self.totalCount = totalCount
+    public init(items: [SearchResponseItemDTO]) {
         self.items = items
-    }
-
-    public enum CodingKeys: String, CodingKey { 
-        case totalCount = "total_count"
-        case items
     }
 
 
