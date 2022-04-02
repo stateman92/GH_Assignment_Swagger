@@ -1,7 +1,7 @@
 swagger: "2.0"
 info:
   description: API specification for an assignment
-  version: 1.0.2
+  version: 1.0.3
   title: GitHub search
 host: api.github.com
 basePath: /
@@ -77,7 +77,9 @@ definitions:
         type: integer
         example: 40
       items:
-        $ref: '#/definitions/SearchResponseItemDTO'
+        type: array
+        items:
+          $ref: '#/definitions/SearchResponseItemDTO'
   SearchResponseItemDTO:
     required:
     - id

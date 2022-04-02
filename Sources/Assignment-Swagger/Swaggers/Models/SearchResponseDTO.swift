@@ -12,9 +12,9 @@ import Foundation
 public struct SearchResponseDTO: Codable {
 
     public var totalCount: Int
-    public var items: SearchResponseItemDTO
+    public var items: [SearchResponseItemDTO]
 
-    public init(totalCount: Int, items: SearchResponseItemDTO) {
+    public init(totalCount: Int, items: [SearchResponseItemDTO]) {
         self.totalCount = totalCount
         self.items = items
     }
