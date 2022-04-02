@@ -1,7 +1,7 @@
 swagger: "2.0"
 info:
   description: API specification for an assignment
-  version: 1.0.5
+  version: 1.0.6
   title: GitHub search
 host: api.github.com
 basePath: /
@@ -34,22 +34,22 @@ paths:
         type: string
       - name: sort
         in: query
-        description: "Sorts the results of your query by number of stars, forks, or help-wanted-issues or how recently the items were updated. Default: best match"
+        description: "Sorts the results of your query by number of stars, forks, or help-wanted-issues or how recently the items were updated. Default: best match."
         required: false
         type: string
       - name: order
         in: query
-        description: "Determines whether the first search result returned is the highest number of matches (desc) or lowest number of matches (asc). This parameter is ignored unless you provide sort. Default: desc"
+        description: "Determines whether the first search result returned is the highest number of matches (desc) or lowest number of matches (asc). This parameter is ignored unless you provide sort. Default: desc."
         required: false
         type: string
       - name: per_page
         in: query
-        description: "Results per page (max 100). Default: 30"
+        description: "Results per page (max 100). Default: 30."
         required: false
         type: integer
       - name: page
         in: query
-        description: "Page number of the results to fetch. Default: 1"
+        description: "Page number of the results to fetch. Default: 1."
         required: false
         type: integer
       responses:

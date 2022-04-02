@@ -16,10 +16,10 @@ open class SearchAPI {
      
      - parameter accept: (header) Setting to application/vnd.github.v3+json is recommended. 
      - parameter q: (query) The query contains one or more search keywords and qualifiers. 
-     - parameter sort: (query) Sorts the results of your query by number of stars, forks, or help-wanted-issues or how recently the items were updated. Default: best match (optional)
-     - parameter order: (query) Determines whether the first search result returned is the highest number of matches (desc) or lowest number of matches (asc). This parameter is ignored unless you provide sort. Default: desc (optional)
-     - parameter perPage: (query) Results per page (max 100). Default: 30 (optional)
-     - parameter page: (query) Page number of the results to fetch. Default: 1 (optional)
+     - parameter sort: (query) Sorts the results of your query by number of stars, forks, or help-wanted-issues or how recently the items were updated. Default: best match. (optional)
+     - parameter order: (query) Determines whether the first search result returned is the highest number of matches (desc) or lowest number of matches (asc). This parameter is ignored unless you provide sort. Default: desc. (optional)
+     - parameter perPage: (query) Results per page (max 100). Default: 30. (optional)
+     - parameter page: (query) Page number of the results to fetch. Default: 1. (optional)
      - parameter completion: completion handler to receive the data and the error objects
      */
     open class func searchRepositoriesGet(accept: String, q: String, sort: String? = nil, order: String? = nil, perPage: Int? = nil, page: Int? = nil, completion: @escaping ((_ data: SearchResponseDTO?,_ error: Error?) -> Void)) {
@@ -37,10 +37,10 @@ open class SearchAPI {
      
      - parameter accept: (header) Setting to application/vnd.github.v3+json is recommended. 
      - parameter q: (query) The query contains one or more search keywords and qualifiers. 
-     - parameter sort: (query) Sorts the results of your query by number of stars, forks, or help-wanted-issues or how recently the items were updated. Default: best match (optional)
-     - parameter order: (query) Determines whether the first search result returned is the highest number of matches (desc) or lowest number of matches (asc). This parameter is ignored unless you provide sort. Default: desc (optional)
-     - parameter perPage: (query) Results per page (max 100). Default: 30 (optional)
-     - parameter page: (query) Page number of the results to fetch. Default: 1 (optional)
+     - parameter sort: (query) Sorts the results of your query by number of stars, forks, or help-wanted-issues or how recently the items were updated. Default: best match. (optional)
+     - parameter order: (query) Determines whether the first search result returned is the highest number of matches (desc) or lowest number of matches (asc). This parameter is ignored unless you provide sort. Default: desc. (optional)
+     - parameter perPage: (query) Results per page (max 100). Default: 30. (optional)
+     - parameter page: (query) Page number of the results to fetch. Default: 1. (optional)
 
      - returns: RequestBuilder<SearchResponseDTO> 
      */
