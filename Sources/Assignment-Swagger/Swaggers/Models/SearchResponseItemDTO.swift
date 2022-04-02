@@ -17,16 +17,16 @@ public struct SearchResponseItemDTO: Codable {
     public var _description: String
     public var language: String
     public var stargazersCount: Int
-    public var url: String
+    public var htmlUrl: String
 
-    public init(_id: Int, name: String, owner: SearchResponseItemOwnerDTO, _description: String, language: String, stargazersCount: Int, url: String) {
+    public init(_id: Int, name: String, owner: SearchResponseItemOwnerDTO, _description: String, language: String, stargazersCount: Int, htmlUrl: String) {
         self._id = _id
         self.name = name
         self.owner = owner
         self._description = _description
         self.language = language
         self.stargazersCount = stargazersCount
-        self.url = url
+        self.htmlUrl = htmlUrl
     }
 
     public enum CodingKeys: String, CodingKey { 
@@ -36,7 +36,7 @@ public struct SearchResponseItemDTO: Codable {
         case _description = "description"
         case language
         case stargazersCount = "stargazers_count"
-        case url
+        case htmlUrl = "html_url"
     }
 
 
