@@ -1,7 +1,7 @@
 swagger: "2.0"
 info:
   description: API specification for an assignment
-  version: 1.0.6
+  version: 1.0.7
   title: GitHub search
 host: api.github.com
 basePath: /
@@ -85,6 +85,7 @@ definitions:
     - language
     - stargazers_count
     - html_url
+    - forks
     properties:
       id:
         type: integer
@@ -106,6 +107,9 @@ definitions:
       html_url:
         type: string
         example: "https://github.com/dtrupenn/Tetris"
+      forks:
+        type: integer
+        example: 1
   SearchResponseItemOwnerDTO:
     required:
     - login

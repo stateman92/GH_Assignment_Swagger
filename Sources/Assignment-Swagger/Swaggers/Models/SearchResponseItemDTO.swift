@@ -18,8 +18,9 @@ public struct SearchResponseItemDTO: Codable {
     public var language: String
     public var stargazersCount: Int
     public var htmlUrl: String
+    public var forks: Int
 
-    public init(_id: Int, name: String, owner: SearchResponseItemOwnerDTO, _description: String, language: String, stargazersCount: Int, htmlUrl: String) {
+    public init(_id: Int, name: String, owner: SearchResponseItemOwnerDTO, _description: String, language: String, stargazersCount: Int, htmlUrl: String, forks: Int) {
         self._id = _id
         self.name = name
         self.owner = owner
@@ -27,6 +28,7 @@ public struct SearchResponseItemDTO: Codable {
         self.language = language
         self.stargazersCount = stargazersCount
         self.htmlUrl = htmlUrl
+        self.forks = forks
     }
 
     public enum CodingKeys: String, CodingKey { 
@@ -37,6 +39,7 @@ public struct SearchResponseItemDTO: Codable {
         case language
         case stargazersCount = "stargazers_count"
         case htmlUrl = "html_url"
+        case forks
     }
 
 
