@@ -7,7 +7,7 @@ This package contains a Swagger (OpenAPI) descriptor of the assignment, and the 
 ## Assignment-Swagger 1.0.7 Release Notes (April 3, 2022)
 
 ### New Features
-* Add `SearchResponseItemDTO.forks` property - [commit]()
+* Add `SearchResponseItemDTO.forks` property - [commit](https://github.com/stateman92/GH_Assignment_Swagger/commit/e7889a1181cba9ef68a23fbdec0f6baf6860550a)
 
 ## Assignment-Swagger 1.0.6 Release Notes (April 3, 2022)
 
