@@ -2,7 +2,22 @@
 
 This package contains a Swagger (OpenAPI) descriptor of the assignment, and the generated network layer of that. The descriptor can be used as an imported collection in Postman.
 
+# How to use
+
+### To update this codebase:
+- install `homebrew`: run `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
+- install `openapi generator` via homebrew: run `brew install openapi-generator`
+- run `sh generate.sh` in the root folder
+
+### To use this in a project:
+- add as a dependency with SPM: `https://github.com/stateman92/GH_Assignment_Swagger`
+
 # Releases
+
+## Assignment-Swagger 1.0.8 Release Notes (February 26, 2023)
+
+### Chore
+* Update project's dependency (Alamofire) - [commit]()
 
 ## Assignment-Swagger 1.0.7 Release Notes (April 3, 2022)
 
