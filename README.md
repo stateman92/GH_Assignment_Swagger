@@ -17,7 +17,7 @@ This package contains a Swagger (OpenAPI) descriptor of the assignment, and the 
 ## Assignment-Swagger 1.0.8 Release Notes (February 26, 2023)
 
 ### Chore
-* Update project's dependency (Alamofire) - 29f0bd59ac615c6faecbac25c4fec1ffe59ede20
+* Update project's dependency (Alamofire) - 619667f80591cd707236eb5a6b3d8361e333271c
 
 ## Assignment-Swagger 1.0.7 Release Notes (April 3, 2022)
 
