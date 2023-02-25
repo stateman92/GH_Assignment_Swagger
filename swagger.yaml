@@ -1,7 +1,7 @@
 swagger: "2.0"
 info:
   description: API specification for an assignment
-  version: 1.0.7
+  version: 1.0.8
   title: GitHub search
 host: api.github.com
 basePath: /

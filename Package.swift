@@ -1,4 +1,4 @@
-// swift-tools-version:5.5
+// swift-tools-version:5.7
 
 import PackageDescription
 
@@ -14,7 +14,7 @@ let package = Package(
             targets: ["Assignment-Swagger"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/Alamofire/Alamofire.git", .exact(.init(4, 9, 1)))
+        .package(url: "https://github.com/Alamofire/Alamofire.git", exact: .init(5, 6, 4))
     ],
     targets: [
         .target(
